@@ -51,4 +51,5 @@ class Song
     song.name = filename.split(/( = |\.)/)[1]
     song.artist_name = filename.split(/( = |\.)/)[0]
     self.all << song
+  end
 end
