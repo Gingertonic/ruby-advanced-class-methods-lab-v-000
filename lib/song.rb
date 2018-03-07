@@ -34,9 +34,9 @@ class Song
     namedsong
   end
 
-  def self.find_by_name(name)
+  def self.find_by_name(title)
     self.all.detect do |song|
-      song.name == name
+      song.name == title
       puts song
     end
   end
