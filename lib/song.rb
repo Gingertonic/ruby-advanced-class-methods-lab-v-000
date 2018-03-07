@@ -32,5 +32,5 @@ class Song
     namedsong.name = title
     self.all << namedsong
     namedsong
-
+  end
 end
