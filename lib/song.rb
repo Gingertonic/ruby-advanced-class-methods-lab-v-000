@@ -60,4 +60,8 @@ class Song
       self.all << namedsong
       namedsong
   end
+
+  def self.destroy_all
+    self.all.clear
+  end
 end
