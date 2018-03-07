@@ -33,4 +33,8 @@ class Song
     self.all << namedsong
     namedsong
   end
+
+  def find_by_name(name)
+    self.all.detect {|song| song.name = name}
+  end
 end
