@@ -48,7 +48,7 @@ class Song
 
   def self.new_from_filename(filename)
       namedsong = self.new
-      namedsong.name = title
+      namedsong.name = filename
       self.all << namedsong
       namedsong
   end
