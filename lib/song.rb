@@ -24,10 +24,13 @@ class Song
   def self.new_by_name(title)
     namedsong = self.new
     namedsong.name = title
-    self.all << namedsong
     namedsong
   end
 
-
+  def create_by_name(name)
+    namedsong = self.new
+    namedsong.name = title
+    self.all << namedsong
+    namedsong
 
 end
