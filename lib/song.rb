@@ -48,7 +48,7 @@ class Song
 
   def self.new_from_filename(filename)
       namedsong = self.new
-      namedsong.name = filename
+      namedsong.name = filename.split(/( = |\.)/)[1]
       self.all << namedsong
       namedsong
   end
