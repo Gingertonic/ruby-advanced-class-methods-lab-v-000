@@ -34,7 +34,7 @@ class Song
     namedsong
   end
 
-  def find_by_name(name)
+  def self.find_by_name(name)
     self.all.detect do |song|
       song.name = name
       puts song
