@@ -49,6 +49,7 @@ class Song
   def self.new_from_filename(filename)
       namedsong = self.new
       namedsong.name = filename.split(/( - |\.)/)[2]
+      namedsong.artist_name = filename.split(/( - |\.)/)[0]
       self.all << namedsong
       namedsong
   end
